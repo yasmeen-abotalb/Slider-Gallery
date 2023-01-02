@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+        }
+        body{
+            position: relative;
+        }
+        .background{
+            
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.7);
+            
+          }
+    
+        .target{
+            width: 300px;
+            height: 200px;
+            line-height: 200px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -150px;
+            border-radius: 40px;
+            text-align: center;
+            z-index: 11;
+            display: none;
+        }
+        button{
+            transform: translate(0px,-92px);
+        }
+        .background{
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <img src="cartoon-girls.png" alt="" id="0">
+        <img src="Woody_Woodpecker.png" alt="" id="1">
+        <img src="Daisy_Duck_transparent.png" alt="" id="2">
+        <img src="mickey_mouse_PNG45.png" alt="" id="3">
+
+        <div class="target">
+            <button ><</button>
+            <img src="" alt="" class="target1">
+            <button class="next">></button>
+        </div>
+
+    </div>
+    <div class="background"><div>
+    <script src="slider.js"></script>
+</body>
+</html>
